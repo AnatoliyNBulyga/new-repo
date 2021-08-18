@@ -1,0 +1,40 @@
+@import "utils/colors.scss";
+
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Averta Regular", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 16px;
+  color: $text-color;
+  background-color: $background-main;
+  margin: 0;
+  min-width: 320px;
+}
+.wrap {
+  max-width: 1040px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+.bold {
+  font-weight: 700;
+}
+ul {
+  padding: 0;
+  margin: 0;
+}
+.base-link {
+  color: inherit;
+  text-decoration: underline;
+}
+.overflow-hidden {
+  overflow: hidden;
+}
+.flex-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}

@@ -1,0 +1,47 @@
+/* Averta Regular */
+@font-face {
+  font-family: 'Averta Regular';
+  src: url('../assets/fonts/averta-regular/averta-regular.eot');
+  src: local('../assets/fonts/averta-regular/averta-regular'), local('Averta Regular'),
+  url('../assets/fonts/averta-regular/averta-regular.eot?#iefix') format('embedded-opentype'),
+  url('../assets/fonts/averta-regular/averta-regular.woff') format('woff'),
+  url('../assets/fonts/averta-regular/averta-regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Averta Extrabold */
+@font-face {
+  font-family: 'Averta Extrabold';
+  src: url('../assets/fonts/averta-extrabold/averta-extrabold.eot');
+  src: local('../assets/fonts/averta-extrabold/averta-extrabold'), local('Averta Extrabold'),
+  url('../assets/fonts/averta-extrabold/averta-extrabold.eot?#iefix') format('embedded-opentype'),
+  url('../assets/fonts/averta-extrabold/averta-extrabold.woff') format('woff'),
+  url('../assets/fonts/averta-extrabold/averta-extrabold.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+}
+
+/* Marbellya Regular */
+@font-face {
+  font-family: 'Marbellya Regular';
+  src: url('../assets/fonts/marbellya-regular/marbellya-regular.eot');
+  src: local('../assets/fonts/marbellya-regular/marbellya-regular'), local('Marbellya Regular'),
+  url('../assets/fonts/marbellya-regular/marbellya-regular.eot?#iefix') format('embedded-opentype'),
+  url('../assets/fonts/marbellya-regular/marbellya-regular.woff') format('woff'),
+  url('../assets/fonts/marbellya-regular/marbellya-regular.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+}
+
+/* Trade Gothic Bold */
+@font-face {
+  font-family: 'Trade Gothic Bold';
+  src: url('../assets/fonts/trade-gothic-bold/trade-gothic-bold.eot');
+  src: local('../assets/fonts/trade-gothic-bold/trade-gothic-bold'), local('Trade Gothic Bold'),
+  url('../assets/fonts/trade-gothic-bold/trade-gothic-bold.eot?#iefix') format('embedded-opentype'),
+  url('../assets/fonts/trade-gothic-bold/trade-gothic-bold.woff') format('woff'),
+  url('../assets/fonts/trade-gothic-bold/trade-gothic-bold.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+}

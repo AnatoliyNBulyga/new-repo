@@ -15,7 +15,7 @@
   clip: rect(1px, 1px, 1px, 1px);
   padding: 0!important;
   border: 0!important;
-  height: 1p!important;
+  height: 1px!important;
   width: 1px!important;
   overflow: hidden;
 }
@@ -34,6 +34,14 @@ body {
   background-color: $background-main;
   margin: 0;
   min-width: 320px;
+}
+
+.container {
+  max-width: 1440px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 ul {
@@ -73,4 +81,10 @@ ul {
 .img-responsive {
   max-width: 100%;
   height: auto;
+}
+
+@media(min-width: 1480px) {
+  .container {
+    width: 1440px;
+  }
 }

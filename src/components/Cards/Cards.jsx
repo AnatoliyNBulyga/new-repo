@@ -11,7 +11,7 @@ const Cards = () => {
 
     return cards && cards.length
     ? (
-        <ul className="cards">
+        <ul className="cards container">
             {
                 cards.map(card =>
                     <CardItem key={card.id} {...card}/>

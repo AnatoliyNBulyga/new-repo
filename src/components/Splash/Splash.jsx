@@ -5,32 +5,31 @@ import React from 'react';
 import 'components/Splash/Splash.scss';
 
 //images
-import bkg from 'assets/images/backgrounds/bkg-main.jpg';
-import authorAvatar from 'assets/images/icons/avatar-big.png';
-import authorAvatar2x from 'assets/images/icons/avatar-big@2x.png';
-import etherium from 'assets/images/icons/etherium_icon.png';
-import etherium2x from 'assets/images/icons/etherium_icon@2x.png';
-import copy from 'assets/images/icons/copy.png';
-import copy2x from 'assets/images/icons/copy@2x.png';
-import insta from 'assets/images/icons/insta.png';
-import insta2x from 'assets/images/icons/insta@2x.png';
-import twitter from 'assets/images/icons/twitter.png';
-import twitter2x from 'assets/images/icons/twitter@2x.png';
-import check from 'assets/images/icons/check.png';
-import check2x from 'assets/images/icons/check@2x.png';
-import window from 'assets/images/icons/window.png';
-import window2x from 'assets/images/icons/window@2x.png';
+const bkg = './images/backgrounds/bkg-main.jpg';
+const authorAvatar = './images/icons/avatar-big.png';
+const authorAvatar2x = './images/icons/avatar-big@2x.png';
+const etherium = './images/icons/etherium_icon.png';
+const etherium2x = './images/icons/etherium_icon@2x.png';
+const copy = './images/icons/copy.png';
+const copy2x = './images/icons/copy@2x.png';
+const insta = './images/icons/insta.png';
+const insta2x = './images/icons/insta@2x.png';
+const twitter = './images/icons/twitter.png';
+const twitter2x = './images/icons/twitter@2x.png';
+const check = './images/icons/check.png';
+const check2x = './images/icons/check@2x.png';
+const window = './images/icons/window.png';
+const window2x = './images/icons/window@2x.png';
 
 
 const Splash = () => {
     return (
         <section className="splash">
-            <div className="splash__background" style={{backgroundImage: `url(${bkg})`}}>
-                <div className="splash__avatar">
+            <div className="splash__background" style={{backgroundImage: `url(${bkg})`}}></div>
+            <div className="splash__content container">
+                <div className="splash__content-avatar">
                     <img src={authorAvatar} srcSet={`${authorAvatar2x} 2x`} width="137" height="137" alt="Avatar author"/>
                 </div>
-            </div>
-            <div className="splash__content">
                 <div className="splash__content-body">
                     <div className="splash__content-top top-line">
 

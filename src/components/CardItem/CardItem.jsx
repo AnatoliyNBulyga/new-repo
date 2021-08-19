@@ -2,9 +2,6 @@
 import React from 'react';
 // styles
 import './CardItem.scss';
-// import icons
-import checkSmall from "../../assets/images/cards_previews/check_small.png";
-import checkSmall2x from "../../assets/images/cards_previews/check_small@2x.png";
 
 const CardItem = ({
         imgSrc,
@@ -33,7 +30,7 @@ const CardItem = ({
                     <div className="card-body__preview">
                         <div className="card-body__img">
                             <img src={`./images/cards_previews/${previewSrc}`} className="img-responsive" width="24" height="25" alt="Category preview"/>
-                            <img src={checkSmall} srcSet={`${checkSmall2x} 2x`} className="img-responsive check" width="16" height="16" alt="Check icon"/>
+                            <img src="./images/cards_previews/check_small.png" srcSet="./images/cards_previews/check_small@2x.png 2x" className="img-responsive check" width="16" height="16" alt="Check icon"/>
                         </div>
                         <div className="card-body__category">{category}</div>
                     </div>

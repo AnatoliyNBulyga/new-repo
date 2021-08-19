@@ -9,18 +9,6 @@
     background-position: top center;
     height: 270px;
     width: 100%;
-    position: relative;
-  }
-
-  &__avatar {
-    position: absolute;
-    left: 80px;
-    bottom: -67px;
-    display: inline-block;
-    width: 137px;
-    height: 137px;
-    border-radius: $border-radius-circle;
-    margin-top: calc(-65px - 90px);
   }
 
   &__content {
@@ -28,6 +16,17 @@
     padding-left: calc(80px + 137px + 30px);
     padding-right: 80px;
     @include flex-wrap(flex-start, flex-start);
+    position: relative;
+
+    &-avatar {
+      position: absolute;
+      left: 80px;
+      top: -67px;
+      display: inline-block;
+      width: 137px;
+      height: 137px;
+      border-radius: $border-radius-circle;
+    }
 
     &-social {
       margin-left: auto;

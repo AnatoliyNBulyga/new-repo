@@ -4,16 +4,16 @@ import {NavLink} from 'react-router-dom';
 // styles
 import 'components/Navbar/Navbar.scss';
 // images
-import search from 'assets/images/icons/search.png';
-import search2x from 'assets/images/icons/search@2x.png';
-import notice from 'assets/images/icons/notice.png';
-import notice2x from 'assets/images/icons/notice@2x.png';
-import avatar_small from 'assets/images/icons/avatar.png';
-import avatar_small2x from 'assets/images/icons/avatar@2x.png';
+const search = './images/icons/search.png';
+const search2x = './images/icons/search@2x.png';
+const notice = './images/icons/notice.png';
+const notice2x = './images/icons/notice@2x.png';
+const avatar_small = './images/icons/avatar.png';
+const avatar_small2x = './images/icons/avatar@2x.png';
 
 const Navbar = () => {
     return (
-        <header className="navbar">
+        <header className="navbar container">
             <div className="navbar__brand">
                 jumy
             </div>

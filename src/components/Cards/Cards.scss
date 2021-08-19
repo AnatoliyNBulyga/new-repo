@@ -1,0 +1,11 @@
+@import "utils/constants.scss";
+@import "utils/mixines.scss";
+
+.cards {
+  padding: 30px 38px;
+  @include flex-wrap();
+}
+
+.no_items {
+  text-align: center;
+}

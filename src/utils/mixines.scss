@@ -1,0 +1,12 @@
+// flex wrap
+@mixin flex-wrap ($horizotal-direction: space-between, $vertical-direction: center, $wrap: wrap) {
+  display: flex;
+  flex-wrap: $wrap;
+  align-items: $vertical-direction;
+  justify-content: $horizotal-direction;
+}
+
+// transition
+@mixin transition ($deleay: .2s, $prop: all) {
+  transition: $prop $deleay ease;
+}

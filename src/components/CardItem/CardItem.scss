@@ -1,0 +1,75 @@
+@import "utils/constants.scss";
+@import "utils/mixines.scss";
+
+
+.cards_item {
+  display: block;
+  width: 309px;
+  background-color: $background-main;
+  box-shadow: $box-shadow;
+  margin-right: 20px;
+  cursor: pointer;
+  margin-bottom: 60px;
+}
+
+.card-body {
+  min-height: 100px;
+  padding: 18px 16px;
+  text-transform: uppercase;
+  font-family: 'Trade Gothic Bold', Arial, Helvetica, sans-serif;
+
+  &__line {
+    font-size: 20px;
+    line-height: 24px;
+    color: $card-text-color;
+    @include flex-wrap(space-between, center);
+    margin-bottom: 5px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &-count {
+      font-size: 12px;
+      line-height: 14px;
+      margin-left: 3px;
+    }
+  }
+
+  &__preview {
+    @include flex-wrap(flex-start, center);
+  }
+
+  &__img {
+    position: relative;
+    margin-right: 8px;
+
+    & .check {
+      display: inline-block;
+      position: absolute;
+      bottom: 0;
+      right: -8px;
+    }
+  }
+
+  &__category {
+    color: $card-category-color;
+    font-size: 12px;
+    line-height: 14px;
+  }
+
+  &__price {
+    color: $card-text-color;
+    font-size: 12px;
+    line-height: 14px;
+    @include flex-wrap(flex-start, flex-start);
+
+    &.crypto {
+      font-size: 18px;
+      line-height: 24px;
+      background: #ff56a9;
+      background: -webkit-linear-gradient($text-gradient);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+}

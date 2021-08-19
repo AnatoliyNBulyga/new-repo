@@ -1,40 +1,76 @@
-@import "utils/colors.scss";
+@import "utils/normalize";
+@import "utils/constants";
+@import "utils/fonts.scss";
 
-* {
-  box-sizing: border-box;
+*,
+*::after,
+*::before {
+  box-sizing:border-box;
 }
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(1px 1px 1px 1px);
+  /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0!important;
+  border: 0!important;
+  height: 1p!important;
+  width: 1px!important;
+  overflow: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
 body {
   font-family: "Averta Regular", Helvetica, Arial, sans-serif;
   font-weight: normal;
   font-style: normal;
   font-size: 16px;
+  line-height: 20px;
   color: $text-color;
   background-color: $background-main;
   margin: 0;
   min-width: 320px;
 }
-.wrap {
-  max-width: 1040px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin: 0 auto;
-}
-.bold {
-  font-weight: 700;
-}
+
 ul {
   padding: 0;
   margin: 0;
 }
+
+.list-inline {
+  list-style-type: none;
+
+  & > li {
+    display: inline-block;
+  }
+}
+
+.button-default {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
 .base-link {
   color: inherit;
-  text-decoration: underline;
+  text-decoration: none;
+
+  &:hover,
+  &:focus,
+  &:active {
+    text-decoration: none;
+  }
 }
+
 .overflow-hidden {
   overflow: hidden;
 }
-.flex-wrap {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
+
+.img-responsive {
+  max-width: 100%;
+  height: auto;
 }

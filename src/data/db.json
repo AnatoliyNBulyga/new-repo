@@ -1,0 +1,56 @@
+{
+  "cards": [
+    {
+      "id": 1,
+      "imgSrc": "card-img1.jpg",
+      "imgWidth": 309,
+      "imgHeight": 320,
+      "cardTitle": "NIPPON FLEX",
+      "priceCrypto": 8.25,
+      "priceCryptoCurrancy": "ETH",
+      "previewSrc": "preview1.png",
+      "category": "itsnara",
+      "price": 7365,
+      "priceCurrancy": "AED"
+    },
+    {
+      "id": 2,
+      "imgSrc": "card-img2.jpg",
+      "imgWidth": 309,
+      "imgHeight": 320,
+      "cardTitle": "CHAOS ON DELIVERY",
+      "priceCrypto": 5.5,
+      "priceCryptoCurrancy": "ETH",
+      "previewSrc": "preview2.png",
+      "category": "supercar",
+      "price": 7365,
+      "priceCurrancy": "AED"
+    },
+    {
+      "id": 3,
+      "imgSrc": "card-img3.jpg",
+      "imgWidth": 309,
+      "imgHeight": 320,
+      "cardTitle": "MONEY WASHING",
+      "priceCrypto": 1.25,
+      "priceCryptoCurrancy": "ETH",
+      "previewSrc": "preview3.png",
+      "category": "beatbang",
+      "price": 7365,
+      "priceCurrancy": "AED"
+    },
+    {
+      "id": 4,
+      "imgSrc": "card-img4.jpg",
+      "imgWidth": 309,
+      "imgHeight": 320,
+      "cardTitle": "ROBOTIC NAP",
+      "priceCrypto": 4.45,
+      "priceCryptoCurrancy": "ETH",
+      "previewSrc": "preview4.png",
+      "category": "neofab",
+      "price": 7365,
+      "priceCurrancy": "AED"
+    }
+  ]
+}

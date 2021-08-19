@@ -1,0 +1,90 @@
+@import "utils/constants.scss";
+@import "utils/mixines.scss";
+
+.splash {
+
+  &__background {
+    background-repeat: no-repeat;
+    background-size: 1440px 272px;
+    background-position: top center;
+    height: 270px;
+    width: 100%;
+    position: relative;
+  }
+
+  &__avatar {
+    position: absolute;
+    left: 80px;
+    bottom: -67px;
+    display: inline-block;
+    width: 137px;
+    height: 137px;
+    border-radius: $border-radius-circle;
+    margin-top: calc(-65px - 90px);
+  }
+
+  &__content {
+    padding-top: 16px;
+    padding-left: calc(80px + 137px + 30px);
+    padding-right: 80px;
+    @include flex-wrap(flex-start, flex-start);
+
+    &-social {
+      margin-left: auto;
+      list-style-type: none;
+      margin-top: 30px;
+
+      .social-item {
+        margin-bottom: 30px;
+        @include flex-wrap(flex-start);
+
+        &__logo {
+          margin-right: 40px;
+          @include flex-wrap();
+        }
+
+        &__link {
+          margin-right: 22px;
+        }
+
+        &__active {
+          @include flex-wrap();
+        }
+      }
+
+    }
+  }
+}
+
+.top-line {
+  margin-bottom: 50px;
+
+  &__body {
+    @include flex-wrap(flex-start);
+  }
+
+  &__author {
+    font-size: 25px;
+    line-height: 31px;
+    font-family: 'Averta Extrabold', Arial, Helvetica, sans-serif;
+    margin-bottom: 7px;
+    margin-right: 5px;
+  }
+}
+
+.follow {
+  @include flex-wrap(flex-start);
+
+  &__counter {
+    margin-right: 80px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &-value {
+      font-size: 25px;
+      line-height: 31px;
+    }
+  }
+}

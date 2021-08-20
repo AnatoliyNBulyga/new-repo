@@ -1,10 +1,9 @@
 // core
-import React from 'react';
+import React, {memo} from 'react';
+// utils
+import {getPriceDevider} from 'utils/functions';
 // styles
 import './CardItem.scss';
-// import icons
-import checkSmall from "../../assets/images/cards_previews/check_small.png";
-import checkSmall2x from "../../assets/images/cards_previews/check_small@2x.png";
 
 const CardItem = ({
         imgSrc,
@@ -19,10 +18,15 @@ const CardItem = ({
         priceCurrancy
     }) => {
 
+    const icons = {
+        checkSmall: './images/cards_previews/check_small.png',
+        checkSmall2x: './images/cards_previews/check_small@2x.png'
+    }
+
     return (
         <li className="cards_item overflow-hidden">
             <div className="cards_item__image">
-                <img src={`./images/cards/${imgSrc}`} className="img-responsive" width={imgWidth} height={imgHeight} alt="Card image"/>
+                <img src={`./images/cards/${imgSrc}`} className="img-responsive" width={imgWidth} height={imgHeight} alt="Card"/>
             </div>
             <div className="cards_item__content card-body">
                 <div className="card-body__line">
@@ -33,15 +37,15 @@ const CardItem = ({
                     <div className="card-body__preview">
                         <div className="card-body__img">
                             <img src={`./images/cards_previews/${previewSrc}`} className="img-responsive" width="24" height="25" alt="Category preview"/>
-                            <img src={checkSmall} srcSet={`${checkSmall2x} 2x`} className="img-responsive check" width="16" height="16" alt="Check icon"/>
+                            <img src={icons.checkSmall} srcSet={`${icons.checkSmall2x} 2x`} className="img-responsive check" width="16" height="16" alt="Check icon"/>
                         </div>
                         <div className="card-body__category">{category}</div>
                     </div>
-                    <div className="card-body__price"><span className="price-value">{price}</span>{priceCurrancy}</div>
+                    <div className="card-body__price"><span className="price-value">{getPriceDevider(price)}</span>&nbsp;{priceCurrancy}</div>
                 </div>
             </div>
         </li>
     );
 };
 
-export default CardItem;
+export default memo(CardItem);

@@ -1,18 +1,21 @@
 // core
-import React from 'react';
-
+import React, {memo} from 'react';
 // styles
 import 'components/Filter/Filter.scss';
+// components
+import FilterItem from "../FilterItem/FilterItem";
 
 
-const Filter = () => {
+const Filter = (props) => {
     return (
-        <ul className="filter list-inline">
-            <li className="filter__item"><a href="javascript:void(0);" title="Tab" className="filter__link base-link current">Created</a></li>
-            <li className="filter__item"><a href="javascript:void(0);" title="Tab" className="filter__link base-link">Collected</a></li>
-            <li className="filter__item"><a href="javascript:void(0);" title="Tab" className="filter__link base-link">Favorites</a></li>
+        <ul className="filter list-inline container">
+            {
+                props.items && props.items.map( (item, index) =>
+                    <FilterItem key={`${item}_${index}`} item={item} index={index} {...props}/>
+                )
+            }
         </ul>
     );
 };
 
-export default Filter;
+export default memo(Filter);

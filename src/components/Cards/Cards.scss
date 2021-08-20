@@ -2,10 +2,17 @@
 @import "utils/mixines.scss";
 
 .cards {
-  padding: 30px 38px;
+  padding: 30px 40px;
   @include flex-wrap();
 }
 
 .no_items {
   text-align: center;
+}
+
+@media(max-width: 530px) {
+  .cards {
+    justify-content: center;
+    padding: 30px 15px;
+  }
 }

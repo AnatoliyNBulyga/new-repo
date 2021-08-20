@@ -2,7 +2,7 @@
 @import "utils/mixines.scss";
 
 .filter {
-  padding: 60px 75px 65px;
+  padding: 18px 70px 35px;
   @include flex-wrap(center);
 
   &__item {
@@ -16,9 +16,16 @@
     padding: 26px 0;
     border-bottom: $tab-border;
     @include transition();
+    cursor: pointer;
 
     &.current {
       border-bottom: $tab-border-active;
     }
+  }
+}
+
+@media(max-width: 530px) {
+  .filter {
+    padding: 0 15px;
   }
 }

@@ -16,7 +16,7 @@
     },
     {
       "id": 2,
-      "type": 2,
+      "type": 1,
       "imgSrc": "card-img2.jpg",
       "imgWidth": 309,
       "imgHeight": 320,
@@ -44,7 +44,7 @@
     },
     {
       "id": 4,
-      "type": 3,
+      "type": 1,
       "imgSrc": "card-img4.jpg",
       "imgWidth": 309,
       "imgHeight": 320,
@@ -100,7 +100,7 @@
     },
     {
       "id": 8,
-      "type": 3,
+      "type": 2,
       "imgSrc": "card-img8.jpg",
       "imgWidth": 309,
       "imgHeight": 320,

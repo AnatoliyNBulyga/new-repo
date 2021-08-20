@@ -25,21 +25,6 @@ const App = () => {
         dispatch(dataActions.setDataAction(cards));
     }, [dispatch]);
 
-    useEffect(() => {
-
-        if (!type) {
-            // if type === 0 set all items
-            dispatch(dataActions.showLoader())
-            return dispatch(dataActions.setDataAction(cards));
-        }
-        // if type > 0 set filtered items
-        dispatch(dataActions.showLoader())
-        const filteredCards = cards.filter( card => card.type === type)
-        dispatch(dataActions.setDataAction(filteredCards));
-
-    }, [dispatch, type])
-
-
     const onSelectTab = useCallback(index => {
         dispatch(filterActions.setType(index));
     }, [dispatch]);

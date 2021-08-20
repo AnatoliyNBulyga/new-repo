@@ -1,5 +1,5 @@
 // core
-import React, {memo} from 'react';
+import React, {memo, useMemo} from 'react';
 import {useSelector} from 'react-redux';
 // styles
 import 'components/Cards/Cards.scss';
@@ -10,13 +10,25 @@ import Preloader from "../Preloader/Preloader";
 
 const Cards = () => {
     const {cards, isLoading} = useSelector( state => state.data);
+    const {type} = useSelector( state => state.filter);
+
+    const filteredCards = useMemo(() => {
+
+        return type
+        // if type > 0 set filtered items
+        ? cards.filter( card => card.type === type)
+        // if type === 0 set all items
+        : cards
+
+    }, [cards, type])
+
     return isLoading
     ? <Preloader />
-    :  cards && cards.length
+    :  filteredCards && filteredCards.length
         ? (
             <ul className="cards container">
                 {
-                    cards.map(card =>
+                    filteredCards.map(card =>
                         <CardItem key={card.id} {...card}/>
                     )
                 }

@@ -1,4 +1,4 @@
-# React Test Task ( Real chat )
+# React Test Task ( Social page )
 **Stack:**
 - ReactJS + hooks
 - React Router
